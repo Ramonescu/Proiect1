@@ -1,4 +1,5 @@
 <!doctype html>
+<!--DOCTYPE nu doctype -->
 <html>
   <head>
     
@@ -20,7 +21,11 @@
     
     width:1363px;
     height:50px;
-    background-color:white;
+    /*
+      Chestia asta se poate scrie mai compact asa:
+      border-bottom:1.75px #D8D8D8 solid;
+      As evita valorile ne-intregi aici, nu sunt sigur ca arata la fel pe toate browserele.
+    */
     border-bottom-style: solid;
     border-bottom-color:#D8D8D8;
     border-width:0px 0px 1.75px 0px;
@@ -48,6 +53,10 @@
     }
     
     
+    background-color:white;
+    /*Conventia e in general ca orice e cod sa fie numit in engleza. 
+      Chestiile afisate utilizatorului vor fi evident in limba aplicatiei
+    */
     #treibar{
     
     
@@ -78,7 +87,7 @@
     
     }
     
-    
+    /*Asta e asa de generala ca ar trebui sa fie o clasa, nu un ID*/
     #gray{
     
     color:#BDBDBD;
@@ -100,6 +109,7 @@
     
     
     }
+    /* coreeeeect :) */
     a:hover{
     
     
@@ -155,6 +165,7 @@
     
     
     #rightbar li:before {
+      /* Chestia asta nu cred ca o sa mearga daca cineva nu are simbolul ala instalat pe calculator*/
     content: "• ";
     color: #BDBDBD;
     }
@@ -231,14 +242,22 @@
     
     }
     
-    
+    /*E destul de periculos sa pui asa de multe proprietati pe toate tagurile h1 din pagina.
+        De multe ori stilurile vor fi refolosite, cel putin partial, pe mai multe pagini (o sa vezi mai incolo.).
+        Propunerea mea ar fi sa ii dai un nume de clasa, evitand stiluri prea generale, de exemplu:
+        h1.articleTitle */
     h1{
     
     float:left;
+    /*
+        font size, font-weight, font-family si line-height pot fi declarate in combinatie
+        font: bolder 32px/110% open sans, sans-serif;
+    */
     font-size:32px;
     font-weight: 700;
     margin:0px;
     padding:0px;
+    /* ai doua declaratii de font-weight, una va fi ignorata. Cred ca prima.*/
     font-weight:bolder;
     position:relative;
     top:50px;
@@ -304,7 +323,8 @@
     
     
     
-    
+    /*Astea nu ar trebui sa fie necesare. Daca pui pe toate articolele width fix si float:left,
+    se vor aseza frumos unul dupa altul. Nu ai mai avea nevoie nici de divuri de clear, probabil.*/
     #art1{
     
     float:left;
@@ -369,6 +389,13 @@
     
     }
     
+    /* Ar trebui sa eviti sa folosesti id-uri la clase, cu exceptia chestiilor care sigur nu se repeta. De exemplu, logoul. 
+    Majoritatea chestiilor astora se pot defini cu clase din ce in ce mai specifice.
+    Ai putea avea un div pentru tot articolul cu clasa "article", un h2 pentru titlu, un p pentru text etc si le-ai putea defini pe toate cu .article ca si baza:
+    .article {...}
+    .article h2 {...}
+    .article p {...} etc etc.
+    */
     #mic{
     
     font-size:13px;
@@ -833,7 +860,9 @@
     </style>
   </head>
   
-  
+  <!-- Ti-am aranjat indentarea un pic. E important pentru a putea urmari inchiderile tagurilor.
+        Imediat se observa, de exemplu, ca #topbar iti contine toata pagina. Logic ar fi sa se inchida inainte de primul articol.
+    -->
   
   <body>
     
@@ -855,7 +884,6 @@
       <div id="treibar">
         
         <ul>
-          
           <li>HOME</li>
           <li id="gray">VIDEO</li>
           <li id="blue"><a href="">READER</a></li>
@@ -870,6 +898,7 @@
           
           
           
+          <!-- Astea ar trebui sa fie toate linkuri-->
           <li>iOS</li>
           <li>Android</li>
           <li>Twitter</li>
@@ -896,7 +925,9 @@
         
       </div>
       
-      
+      <!--Eu aici as fi facut HTML-ul un pic mai complicat. Articolul mare ar fi fost incapsulat
+            tot intr-un div, poate cu o clasa gen largeArticle.
+        -->
       
       <div id="pozaverde">
         
@@ -938,7 +969,10 @@
       <div class="clear"></div>
       
       
-      
+      <!--
+            As elimina clasele si as pune tot ce tine de un articol in divul asta, nu doar imaginea. Astfel poti pozitiona totul super logic si poti sa scapi de toate pozitiile alea relative.
+            Poti, desigur, la nevoie, sa mai incapsulezi imaginea in inca un div.
+        -->
       <div id="art1">
         
         <img src="images/article01.jpg"/>
@@ -1002,7 +1036,7 @@
           <div class="clear"></div>
           
           <div id="beast">
-            
+            <!-- Poti sa le scrii astea cu litere mici si sa le transformi cu css (text-transform)-->
             <p>BEAST QUAKE WEATHER</p>
             
           </div>
@@ -1012,7 +1046,7 @@
           <p><span id="t3">Marshawn Lynch:</span></p><br /><p><span id="t3"> Irreplaceably Replaceable</span></p>
           
           <div class="clear"></div>
-          
+          <!-- nu ai voie sa folosesti acelasi ID de doua ori in aceeasi pagina -->
           <p><span id="mic2" class="bold"> 46 &ensp;</span><span id="mic2">  Medium &nbsp; • &nbsp; Sports</p></span></p>
           
           
@@ -1029,7 +1063,7 @@
           <div class="clear"></div>
           
           
-          
+          <!-- Dupa parerea mea, toate divurile care incapsuleaza articole ar trebui sa vina unul dupa altul-->
           <div id="art4">
             
             <img src="images/article04.jpg"/>
@@ -1163,6 +1197,8 @@
       </div>
       
     </div>
+
+    <!--Cred ca ai vreo 6 taguri de inchidere prea mult. Nu am chiar reusit sa le numar -->
   </div>
 </div>
 
