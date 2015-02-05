@@ -22,42 +22,33 @@
     width:1363px;
     height:50px;
     background-color:white;
-    border-bottom-style: solid;
-    border-bottom-color:#D8D8D8;
-    border-width:0px 0px 1.75px 0px;
+    border-bottom:1.75px #D8D8D8 solid;
 
-   
-    
-    
     }
    
   
-  .fixedwidth{
-    
-    width:1900px;
-    margin:0 auto;
   
   
-  }
+ 
   #digg{
    
-   position:relative;
-   left:55px;
-   top:10px;
-   float:left;
-   margin-right:70px;
    
+  
+   float:left;
+   margin-top:10px;
+   margin-left:50px;
+   width:50px;
   }
    
  
-  #treibar{
+  #homevideoreader{
   
   
    padding:0px;
   
   }
  
- #treibar li{
+ #homevideoreader li{
   
    float:left;
    list-style:none;
@@ -67,21 +58,25 @@
    margin-top:13px;
    font-family:Monaco, monospace;
    font-weight:10;
- 
+   
+   
  
  
  }
  
- #treibar ul{
+ #homevideoreader ul{
   
     padding:0px;
     margin:0px;
     height:5px;
-  
+     margin-right:10px;
+     float:left;
+     width:200px;
+
   }
  
  
- #gray{
+ .gray{
  
       color:#BDBDBD;
  
@@ -115,57 +110,62 @@
  
  
       padding:0px;
+      margin-left:0px;
  
  
  }
+ 
+ 
+ #rightbar li:before {
+    content:#x0002E;
+    color:#BDBDBD;
+   
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  #rightbar li{
 
       float:left;
       list-style:none;
-      padding:3px 7px 0px 3px;
-      margin-left:-5px;
+      padding:3px 5px 0px 5px;
+      margin-left:5px;
       margin-top:5px;
       font-family:Monaco, monospace;
       font-weight:5;
       font-size:12px;
       color:#848484;
-      position:relative;
-      left:450px;
-      top:12px;
       line-height:10%;
+      margin-right:2px;
  
  }
  
  
- 
- #rightbar li:first-child { 
-      list-style:none; 
-      
-}
+
  
  
  
  #rightbar ul{
  
       padding:0px;
-      margin:0px;
+      margin-right:0;
       height:5px;
+      width:500px;
+      margin-left:450px;
+      float:left;
  
  
  }
  
  
  
- #rightbar li:before {
-    content: "• ";
-    color: #BDBDBD; 
-}
  
  
-
-
-   
  
  
  #signin{
@@ -176,10 +176,12 @@
     font-weight:5;
     font-size:12px;
     color:#088A85;
-    float:right;
-    position:relative;
-    left:-90px;
-    top:8px;
+    float:left;
+    width:50px;
+    margin-left:-70px;
+    margin-top:17px;
+   
+   
     
  
  }
@@ -188,11 +190,11 @@
  #search{
  
    padding:0px;
-   margin:0px;
-   position:relative;
+  
+   margin-top:17px;
    float:right;
-   left:50px;
-   top:-15px;
+   width:80px;
+   
  
  
  }
@@ -200,13 +202,9 @@
  #pozaverde{
  
     float:left;
-    position:relative;
-    top:50px;
-    left:-150px;
-    
- 
+    margin-left:140px;
+    margin-top:17px;
 
- 
  
  }
  
@@ -214,9 +212,7 @@
  
  
     float:left;
-    position:relative;
-    left:-120px;
-    top:50px;
+   
     font-size:15px;
     margin:0px;
     padding:0px;
@@ -238,24 +234,17 @@
  }
  
  
- h1{
+ .h1.articleTitle {
  
     float:left;
-    font-size:32px;
-    font-weight: 700;
-    margin:0px;
-    padding:0px;
-    font-weight:bolder;
-    position:relative;
-    top:50px;
-    left:-120px;
-    font-family:open sans, sans serif;
-    margin-right:0px;
-    text-align:justify;
-    width:300px;
-    line-height:110%;
+   
+    font: bolder 32px/110% open sans, sans-serif;
+    margin:0;
+    padding:0;
+   
     
-    
+   
+
  
  }
  
@@ -267,9 +256,7 @@
     float:left;
     margin-left:0px;
     margin-right:0px;
-    position:relative;
-    left:-120px;
-    top:55px;
+   
     color:#424242;
     
     
@@ -289,13 +276,12 @@
     float:left;
     margin:0px;
     padding:0px;
-    position:relative;
+   
     text-align:justify;
     font-weight:lighter;
     color:#2E2E2E;
     width:300px;
-    top:64px;
-    left:-120px;
+    
     
     
     }
@@ -954,12 +940,12 @@
   
  </div>
   
-  <div id="treibar">
+  <div id="homevideoreader">
     
     <ul>
     
     <li>HOME</li>
-    <li id="gray">VIDEO</li>
+    <li class="gray">VIDEO</li>
     <li id="blue"><a href="">READER</a></li>
     
     </ul>
@@ -990,12 +976,13 @@
   
   <p>Sign In</p>
   
+  </div>
     <div id="search">
   
   <img src="images/icoSearch.jpg"/>
   
   </div>
- 
+  </div>
   </div>
  
  
@@ -1003,7 +990,7 @@
  <div id="pozaverde">
  
  
-  <img src="images/articleMain.jpg" width="660" height="350"/>
+  <img src="images/articleMain.jpg" width="640" height="330"/>
   
   </div>
   
@@ -1016,9 +1003,9 @@
   
   </div>
  
- <div>
+ <div class="h1.articleTitle">
  
- <h1>Science For The People</h1>
+ <p>Science For The People</p>
  
  
 </div>
@@ -1309,9 +1296,6 @@
  </div>
  </div>
  
- </div>
-  </div>
- </div>
  
  
  
