@@ -9,74 +9,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
     
-    body{
+     body{
     
-    margin:0 auto;
-    padding:0 auto;
+     margin:0 auto;
+     padding:0 auto;
     
-    }
+     }
     
-    p {
+     p {
     
-    margin:0px;
+     margin:0px;
     
-    
-    }
+     }
     
    
+     #topbar{
     
-    #topbar{
+     width:1350px;
+     height:50px;
+     background-color:white;
+     border-bottom:1.75px #D8D8D8 solid;
+     position:fixed;
     
-    width:1350px;
-    height:50px;
-    background-color:white;
-    border-bottom:1.75px #D8D8D8 solid;
-    position:fixed;
-    
-    }
+     }
    
 
-    #digg{
+     #digg{
    
-
-   float:left;
-   margin-top:10px;
-   margin-left:50px;
-   width:50px;
+     float:left;
+     margin-top:10px;
+     margin-left:50px;
+     width:50px;
     
-   }
+     }
    
  
-   #homevideoreader{
+     #homevideoreader{
   
+     padding:0px;
   
-   padding:0px;
-  
-    }
+     }
  
-   #homevideoreader li{
-  
-   float:left;
-   list-style:none;
-   font-size:15px;
-   padding:3px 7px 7px 3px;
-   margin-left:10px;
-   margin-top:13px;
-   font-family:Monaco, monospace;
-   font-weight:10;
    
-    }
- 
-    #homevideoreader ul{
+     #homevideoreader li{
   
-    padding:0px;
-    margin:0px;
-    height:5px;
-    margin-right:150px;
-    float:left;
-    width:200px;
+     float:left;
+     list-style:none;
+     font-size:15px;
+     padding:3px 7px 7px 3px;
+     margin-left:10px;
+     margin-top:13px;
+     font-family:Monaco, monospace;
+     font-weight:10;
+   
+     }
+ 
+ 
+     #homevideoreader ul{
+  
+     padding:0px;
+     margin:0px;
+     height:5px;
+     margin-right:150px;
+     float:left;
+     width:200px;
 
-    }
+     }
  
  
     .gray{
@@ -86,7 +84,7 @@
      }
  
  
-    #blue a:link{
+     #blue a:link{
  
      text-decoration:none;
      
@@ -118,19 +116,25 @@
  
      #rightbar li:before {
     
-     content:#x0002E;
+     content:" • ";
      color:#BDBDBD;
    
-      }
- 
+     }
+     
+     
+     #rightbar li:first-child {
+    
+     list-style: none; 
+   
+     }
+     
 
- 
      #rightbar li{
 
      float:left;
      list-style:none;
-     padding:3px 8px 0px 5px;
-     margin-left:5px;
+     padding:3px 0px 0px 0px;
+     margin-left:1px;
      margin-top:5px;
      font-family:Monaco, monospace;
      font-weight:5;
@@ -178,41 +182,28 @@
      margin-left:30px;
    
      }
- 
      
-      
-     .UpArticle{
-     
-     
-      
-     
-     
-     }
    
      .UpArticle img{
      
+      float:left;
+      margin-left:140px;
+      margin-top:70px;
      
-     float:left;
-     margin-left:140px;
-     margin-top:70px;
-     
-
-     }
+      }
  
 
      .cucu h1{
       
-     font: bolder 32px/110% open sans, sans-serif;
-     width:300px;
-     margin-top:2px;
-     margin-bottom:0;
+      font: bolder 32px/110% open sans, sans-serif;
+      width:300px;
+      margin-top:2px;
+      margin-bottom:0;
 
-     }
- 
+      }
  
 
      .cucu{
-     
      
      float:left;
      width:300px;
@@ -220,6 +211,7 @@
      margin-left:30px;
      
      }
+  
   
      .cucu p{
  
@@ -233,59 +225,59 @@
   
      .clear{
     
-    clear:both;
+      clear:both;
     
       }
   
 
-     #globalarticle{
+      #globalarticle{
      
-     width:1050px;
-     margin-left:140px;
-     margin-top:40px;
+      width:1050px;
+      margin-left:140px;
+      margin-top:40px;
+      
+      }
+  
+  
+     .BeforeArticle{
+    
+      float:left;
+      min-height:480px;
+     
+      }
+  
+ 
+     .article{
+     
+     width:350px;
+     line-height:130%;
      
      }
   
-  
-    .BeforeArticle{
-    
-    float:left;
-    min-height:480px;
-    }
-  
  
-    .article{
+     .article p{
      
-    width:350px;
-    line-height:130%;
-    }
-  
- 
-    .article p{
+     font-weight:lighter;
+     color:#2E2E2E;
+     width:340px;
+     margin-top:5px;
+     font-size:14px;
      
-    font-weight:lighter;
-    color:#2E2E2E;
-    width:340px;
-    margin-top:5px;
-    font-size:14px;
-     
-    }
+     }
  
  
-
      .firsttitle{
 
-    text-transform: uppercase;
-    margin-top:10px;
-    font-size:11px;
-    color:#2E2E2E;
-    font-weight:bold;
+     text-transform: uppercase;
+     margin-top:10px;
+     font-size:11px;
+     color:#2E2E2E;
+     font-weight:bold;
  
      }
  
  
- 
-    .smallestwri{
+     .smallestwri{
  
      font-size:11px;
      color:#424242;
@@ -298,7 +290,7 @@
     
      font-weight:bold;
     
-    }
+     }
  
 
      .largeArticle {
@@ -310,17 +302,16 @@
      color:black;
      font-weight:bold;
     
-    }
- 
- 
- 
-     #FooterBar{
-     
-     float:left;
-     margin-top:120px;
-     margin-left:0px;
-     
      }
+ 
+ 
+      #FooterBar{
+     
+      float:left;
+      margin-top:120px;
+      margin-left:0px;
+      
+      }
  
  
       #DowndloadApp{
@@ -335,7 +326,6 @@
       
       }
       
-
      
      .bottomtitle{
     
@@ -345,9 +335,8 @@
       color:#5C5959;
       font-size:14px;
       margin-bottom:18px;
+      
       }
- 
- 
  
  
      .txtbottom{
@@ -357,7 +346,6 @@
       color:gray;
       font-weight:lighter;
       font-size:13px;
-      
       
       }
  
@@ -420,8 +408,8 @@
    
       }
  
+ 
       #enter{
-    
     
       width:50px;
       height:35px;
@@ -444,74 +432,151 @@
       
       }
  
- 
       
       #wheretobefound{
     
-      
-     
       width:200px;
       margin-left:25px;
       
-      
-
-      
       }
  
-      
+ 
       .findDigg{
       
-      width:50px;
-      
-      
+      width:250px;
       
       }
       
       
+      .findDigg a{
       
-      
-      .tobefoundtxt{
-    
-      width:200px;  
+      width:250px;
       color:gray;
       font-weight:lighter;
       font-size:13px;
-      float:left;
+      margin:10px 0 0 20px;
+       
+      }
       
       
+      .findDigg img{
+      
+      margin:10px 0 0 0px;
+      width:14px;
       
       }
       
       
-      .tobefoundtxt a:link{
+      .findDigg a:link{
  
-     text-decoration:none;
+      text-decoration:none;
      
-     }
- 
-     a:visited{
- 
-     text-decoration:none;
-     color:gray;
- 
-     }
+      }
  
  
-     a:hover{
-
-     color:#17446B;
+      a:visited{
  
-     } 
+      text-decoration:none;
+      color:gray;
+   
+      }
  
  
+      a:hover{
+ 
+      color:#17446B;
+ 
+      } 
+ 
+ 
+      #FooterBox{
     
+      float:left;
+      width:1350px;
+      height:55px;
+      background-color:#D8D8D8;
+      margin-left:0px;
+      margin-top:0px;
+      border-right:1.75px #BDBDBD solid;
+   
+      }
  
- </style>
- </head>
+ 
+      #BottomBar{
+ 
+      padding:0px;
+      margin-left:0px;
+ 
+      }
+ 
+ 
+     #BottomBar li{
+
+     float:left;
+     list-style:none;
+     font-size:13px;
+     padding:3px 7px 7px 3px;
+     margin-left:10px;
+     margin-top:13px;
+     font-family:Monaco, monospace;
+     color:gray;
+    
+     }
+
+      
+      #BottomBar ul{
+ 
+      padding:0px;
+      margin:0px;
+      height:5px;
+      float:left;
+      width:800px;
+      margin-left:120px;
+       
+      }
+
+ 
+      #BottomBarright{
+ 
+      padding:0px;
+      margin-left:0px;
+ 
+      }
+ 
+
+     #BottomBarright li{
+
+     float:left;
+     list-style:none;
+     font-size:10px;
+     padding:3px 7px 7px 3px;
+     margin-left:10px;
+     margin-top:10px;
+     font-family:Monaco, monospace;
+     color:gray;
+   
+     }
+
+      
+      #BottomBarright ul{
+ 
+      padding:0px;
+      margin:0px;
+      height:5px;
+      margin-right:0px;
+      float:left;
+      width:500px;
+      margin-left:870px;
+      
+      }
+
+
+      </style>
+   </head>
  
  
  
-  <body>
+<body>
   
    <div id="topbar">
   
@@ -760,25 +825,18 @@
         
         <div id="wheretobefound">
  
-	    <div class="findDigg">
-	    
-		<img src="images/icoTwitterLarge.gif"/>
+	     <div class="findDigg">
+    
+		  <img src="images/icoTwitterLarge.gif">
+    
+		  <a href="">Follow us on Twitter</a>
   
-	    <div class="tobefoundtxt">  
-	    
-		<a href="">Follow us on Twitter</a>
-	
-	  </div>
-	  </div>
+	     </div>
 
  
 	    <div class="findDigg">
 	    
 		<img src="images/icoTumblrLarge.gif"/>
-  
-	    </div>
-  
-	    <div class="tobefoundtxt">  
 	    
 		<a href="">Follow us on Tumblr</a>
 	   
@@ -789,12 +847,8 @@
 	   <div class="findDigg">
 	    
 		<img src="images/icoFacebookLarge.gif"/>
-  
-	   </div>
 	    
-	   <div class="tobefoundtxt">  
-	    
-		  <a href="">Like us on Facebook</a>
+		<a href="">Like us on Facebook</a>
 	   
            </div>
 	   
@@ -803,10 +857,6 @@
 	   <div class="findDigg">
 	    
 		 <img src="images/icoGooglePlusLarge.gif"/>
-
-           </div>
-		 
-	   <div class="tobefoundtxt">  
 	    
 		 <a href="">Digg on Google+</a>
 	   
@@ -816,66 +866,48 @@
 	   <div class="findDigg">
 	    
 		 <img src="images/icoRSSLarge.gif"/>	
-  
-            </div>
-	    
-	    <div class="tobefoundtxt">  
 	    
 		 <a href="">Digg Top Stories RSS</a>
 	   
            </div>
 	   </div>
-	     
-	</div>
-	
+	   </div>
+	   </div> 
 	    
   
-	   
-	  
- 
-	   
- 
-	   
-   
-	
     
+	  <div id="FooterBox">
     
-      <div id="lastbox">
-    
-      <div id="bottombar">
+	      <div id="BottomBar">
  
-      <ul>
+		  <ul>
 
-       <li>About</li>
-       <li>Help</li>
-       <li>Blog</li>
-       <li>Contact</li>
-       <li>Jobs</li>
-       <li>Advertise</li>
-       <li>Submit a Link</li>
-       <li>Mobile Site</li>
+		     <li>About</li>
+		     <li>Help</li>
+		     <li>Blog</li>
+		     <li>Contact</li>
+		     <li>Jobs</li>
+		     <li>Advertise</li>
+		     <li>Submit a Link</li>
+		     <li>Mobile Site</li>
       
- 
-      </ul>
-      </div>
+		  </ul>
+	      </div>
       
+
+	    <div id="BottomBarright">
       
+		<ul>
       
-      <div id="bottombarright">
-      
-      <ul>
-      
-       <li>C 2015 News.me Inc</li>
-       <li>Made in NYC by betaworks</li>
-       <li>Terms</li>
-       <li>Privacy</li>
-      
-      
-      </ul>
-    
-    </div>
-    </div>
+		      <li>© 2015 News.me Inc</li>
+		      <li>Made in NYC by betaworks</li>
+		      <li>Terms</li>
+		      <li>Privacy</li>
+
+		</ul>
+	    </div>
+	</div>
   
  
- </body>
+</body>
 </html>
